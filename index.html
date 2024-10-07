@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鱼的个人网页</title>
+    <style>  
+        .top-image-container {    
+            background-color: black;  
+            text-align: center;  
+            height: 300px;  
+            width: 100%;
+        }  
+        .container {    
+            width: 100%;    
+            max-width: 1800px; /*设置最大宽度美化pc端视图效果*/
+            margin: 30px auto; /*在.container的上下设置30外边距，左右设置自动外边距，以实现水平居中。*/
+            display: flex; 
+            flex-direction: row; /*设置flex子元素的排列方向为水平*/
+        }     
+        .left {    
+            width: 50%; 
+            text-align: right; 
+            padding-left: 20px;
+            padding-right: 20px; 
+        }  
+        .left img {  
+            display: inline-block;
+            max-width: calc(100% - 20px); 
+            height: auto;
+        }  
+        .right-container {
+            width: 50%; 
+            display: flex;  
+            flex-wrap: wrap; /*flex容器内允许换行*/
+            flex-direction: column; /*设置flex子元素的排列方向为垂直*/  
+            gap: 20px; /*在.right-container的子元素之间添加20px的间距*/  
+            justify-content: center; 
+}  
+        .right-top {    
+            height: 30%;
+            text-align: left;
+            padding: 20px;
+            font-size: 32px;
+        } 
+        .right-bottom {
+            text-align: left;
+            padding: 20px;
+            font-size: 16px
+        }
+        .footer {  
+            background-color: rgb(147, 162, 177);  
+            text-align: center;  
+            padding: 2px;
+        } 
+        .highlight {  
+            color: red;  
+            font-size: larger; 
+            font-weight: bold; 
+        }  
+        @media (max-width: 600px) {  
+            .container {
+                flex-direction: column; /* 将布局方向改为垂直（堆叠） */  
+            }  
+            .left, .right-container {  
+                flex: initial; /* 移除 flex 属性，因为现在是垂直布局 */  
+                width: 100%; /* 框占据整个容器宽度 */
+                box-sizing: border-box; /* 确保内边距和边框不会增加元素的总宽度 */ 
+                text-align: center; /* 使内容水平居中 */
+            }  
+            .right-top, .right-bottom {  
+                font-size: 1em; /* 在小屏幕上缩小字体大小 */  
+            }
+        }  
+    </style>  
+</head>
+<body>
+ <div class="top-image-container">
+    <img 
+    src="https://s21.ax1x.com/2024/10/07/pAGuDFf.png"
+    height="300"
+    >
+ </div>   
+ <div class="container">  
+    <div class="left">  
+        <img 
+        src="https://img.chkaja.com/4ad8178ddee75bea.png"
+        >  
+    </div>  
+    <div class="right-container">
+     <div class="right-top">  
+        <p><span class="highlight">色色</span>是学习的第一动力，卡琳典狱长万<span class="highlight">射</span>！</p>  
+        <p>早日学会编程，给<span class="highlight">卡琳典狱长</span>做mod！</p>
+     </div>  
+     <div class="right-bottom">
+        <p>mod构思：</p> 
+        <p style="text-indent: 2em;">基于<a href="https://gitgud.io/karryn-prison-mods/karryn-pregmod">ccmod</a>怀孕功能，新增以下内容：孕肚被皇帝信使发现永远流放迦南结局“永远的典狱长”；医务室可选堕胎和加速孕育，堕胎为降级洗点，加速孕育，生成新类型敌人，前缀“亲子”，增加配套称号和被动。</p>
+        <p style="text-indent: 2em;">精液污染：卡琳那么喜欢皇帝，收到的礼物和信件一定会贴身携带吧。一层镇压后，礼物和信件在衣服耐久掉落后可能被精液污染，产生各种效果。指令公布信息后，敌人知道了情报所以会故意射在信件上。信件分阶段：①沾上奇怪的味道了，②潮湿浸润，③字迹模糊，④奇怪的白斑，⑤最喜欢了～。信件在⑤阶段后且公开所有信息，过程中再次触发射在信上，会让卡琳直接高潮一次。卡琳珍爱的，是皇帝的信件呢，还是大家射给她的心意呢？</p>
+     </div>
+    </div>
+</div>
+<div class="footer">
+    <p>我的网站</p>
+    <p>友情链接</p>
+    <p><a href="https://bbs.imoutolove.me/read.php?tid-2322123">卡琳的监狱V1.3.0.61+3DLC下载</a></p>
+    <p><a href="https://gitgud.io/karryn-prison-mods">卡琳Mod站</a> <a href="https://pan.baidu.com/s/1dVlAfcIGqVdoIoW5XipsRA?pwd=kkkk">部分Mod汉化</a></p>
+</div>
+</body>
+</html>
